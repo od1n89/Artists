@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    >
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/coverSmallImageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        fresco:placeholderImage="@drawable/loading"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Имя"
+        android:id="@+id/nameTextView"
+        android:layout_gravity="right"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/coverSmallImageView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Жанр"
+        android:id="@+id/genreTextView"
+        android:layout_below="@+id/nameTextView"
+        android:layout_toEndOf="@+id/coverSmallImageView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Альбомы"
+        android:id="@+id/AlbumTextView"
+        android:layout_alignBottom="@+id/coverSmallImageView"
+        android:layout_toEndOf="@+id/coverSmallImageView" />
+
+</RelativeLayout>

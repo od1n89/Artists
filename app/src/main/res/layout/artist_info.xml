@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android= "http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent">
+
+
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.artists.ArtistInfo">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/coverSmallImageView"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        fresco:placeholderImage="@drawable/loading"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Жанр"
+        android:id="@+id/genreTextView"
+        android:layout_below="@+id/coverSmallImageView"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Альбомы"
+        android:id="@+id/AlbumsTextView"
+        android:layout_below="@+id/genreTextView"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Биография"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/AlbumsTextView"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Описание"
+        android:id="@+id/DescriptionTextView"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="сайт исполнителя  "
+        android:id="@+id/siteTextView"
+        android:layout_below="@+id/DescriptionTextView"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ссылка"
+        android:id="@+id/LinktextView"
+        android:layout_alignTop="@+id/siteTextView"
+        android:layout_toEndOf="@+id/siteTextView"
+        android:autoLink="web"
+        android:onClick="LinkOnClick" />
+
+</RelativeLayout>
+</ScrollView>
